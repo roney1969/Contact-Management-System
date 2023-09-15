@@ -2,11 +2,12 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class FileIO {
-    public void createCSV(personalContactList, workContactList) throws IOException {
+    public void createCSV(ArrayList<Contact> personalContactList, ArrayList<Contact> workContactList) throws IOException {
 
-        File personalFile = new File("src/main/java/Personal_Contact_Info.csv");
+        File personalFile = new File("src/main/resources/Personal_Contact_Info.csv");
         FileWriter fw1 = new FileWriter(personalFile);
         BufferedWriter bw1 = new BufferedWriter(fw1);
 
@@ -20,7 +21,7 @@ public class FileIO {
         bw1.close();
         fw1.close();
 
-        File workFile = new File("src/main/java/Work_Contact_Info.csv");
+        File workFile = new File("src/main/resources/Work_Contact_Info.csv");
         FileWriter fw2 = new FileWriter(workFile);
         BufferedWriter bw2 = new BufferedWriter(fw2);
 

@@ -1,6 +1,6 @@
 public interface IContactCategory {
-    void addContact();
-    void removeContact();
+    void addContact(String name, String email, int phoneNumber);
+    void removeContact(String name);
     void viewContacts();
-    void searchContacts();
+    void searchContacts(String name);
 }

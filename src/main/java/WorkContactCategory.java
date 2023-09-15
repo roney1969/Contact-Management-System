@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class WorkContactCategory implements IContactCategory{
-    ArrayList<Contact> workContactList = new ArrayList<Contact>;
+    ArrayList<Contact> workContactList = new ArrayList<Contact>();
     HashMap<String, Contact> workContactMap = new HashMap<String, Contact>();
 
     @Override

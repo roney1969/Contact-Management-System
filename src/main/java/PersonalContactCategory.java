@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class PersonalContactCategory implements IContactCategory {
-    ArrayList<Contact> personalContactList = new ArrayList<Contact>;
+    ArrayList<Contact> personalContactList = new ArrayList<Contact>();
     HashMap<String, Contact> personalContactMap = new HashMap<String, Contact>();
 
     @Override

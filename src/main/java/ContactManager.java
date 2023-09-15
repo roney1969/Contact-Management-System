@@ -2,8 +2,8 @@ import java.util.HashMap;
 
 public class ContactManager {
     HashMap<ContactCategoryName, IContactCategory> contactCategoryMap = new HashMap<>();
-    IContactCategory personalContactCategory = new PersonalContactCategory();
-    IContactCategory workContactCategory = new WorkContactCategory();
+    PersonalContactCategory personalContactCategory = new PersonalContactCategory();
+    WorkContactCategory workContactCategory = new WorkContactCategory();
     public ContactManager() {
         contactCategoryMap.put(ContactCategoryName.PERSONAL, personalContactCategory);
         contactCategoryMap.put(ContactCategoryName.WORK, workContactCategory);
